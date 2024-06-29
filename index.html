@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battery Management System</title>
+</head>
+<body>
+  <h1>Voltage Data</h1>
+  <ul id="voltage-data"></ul>
+  <script>
+    async function fetchVoltageData() {
+      const response = await fetch('/api/voltage');
+      const data = await response.json();
+      const list = document.getElementById('voltage-data');
+
+      data.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Time: ${new Date(item.time).toLocaleString()}, Voltage: ${item.value}V`;
+        list.appendChild(listItem);
+      });
+    }
+
+    fetchVoltageData();
+  </script>
+</body>
+</html>

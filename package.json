@@ -1,0 +1,21 @@
+{
+  "name": "bms1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@influxdata/influxdb-client": "^1.33.2",
+    "create-react-app": "^5.0.1",
+    "express": "^4.19.2",
+    "influx": "^5.9.3",
+    "path": "^0.12.7",
+    "react-scripts": "^5.0.1",
+    "ws": "^8.17.1"
+  }
+}
