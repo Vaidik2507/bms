@@ -1,5 +1,5 @@
 {
-  "name": "bms1",
+  "name": "battery_monitoring_system",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -10,12 +10,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@influxdata/influxdb-client": "^1.33.2",
-    "create-react-app": "^5.0.1",
     "express": "^4.19.2",
     "influx": "^5.9.3",
     "path": "^0.12.7",
-    "react-scripts": "^5.0.1",
+    "react-gauge-chart": "^0.5.1",
+    "react-router-dom": "^6.24.0",
     "ws": "^8.17.1"
   }
 }
